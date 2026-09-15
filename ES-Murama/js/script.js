@@ -783,3 +783,69 @@ window.addEventListener(
 
     }
 );
+
+/* =====================================================
+   STAFF SLIDESHOW + FILTERS
+===================================================== */
+(() => {
+    const slides = Array.from(document.querySelectorAll('.staff-slide'));
+    const dots = Array.from(document.querySelectorAll('.staff-slider-dots button'));
+    const prev = document.querySelector('.staff-slider-control.prev');
+    const next = document.querySelector('.staff-slider-control.next');
+    const tabs = Array.from(document.querySelectorAll('.staff-tab'));
+    const cards = Array.from(document.querySelectorAll('.staff-card'));
+
+    if (!slides.length) return;
+
+    let current = 0;
+    let timer = null;
+    let paused = false;
+
+    function showSlide(index) {
+        current = (index + slides.length) % slides.length;
+        slides.forEach((slide, i) => slide.classList.toggle('active', i === current));
+        dots.forEach((dot, i) => dot.classList.toggle('active', i === current));
+    }
+
+    function startAutoplay() {
+        window.clearInterval(timer);
+        timer = window.setInterval(() => {
+            if (!paused && !document.hidden) showSlide(current + 1);
+        }, 5000);
+    }
+
+    prev?.addEventListener('click', () => { showSlide(current - 1); startAutoplay(); });
+    next?.addEventListener('click', () => { showSlide(current + 1); startAutoplay(); });
+    dots.forEach(dot => dot.addEventListener('click', () => {
+        showSlide(Number(dot.dataset.slide || 0));
+        startAutoplay();
+    }));
+
+    const slider = document.querySelector('.staff-slider');
+    slider?.addEventListener('mouseenter', () => paused = true);
+    slider?.addEventListener('mouseleave', () => paused = false);
+    slider?.addEventListener('focusin', () => paused = true);
+    slider?.addEventListener('focusout', () => paused = false);
+
+    // Pause while the tab is hidden to avoid wasting timers.
+    document.addEventListener('visibilitychange', () => {
+        if (!document.hidden) startAutoplay();
+    });
+
+    showSlide(0);
+    startAutoplay();
+
+    function filterStaff(category) {
+        cards.forEach(card => {
+            const visible = card.dataset.staffCategory === category;
+            card.classList.toggle('is-hidden', !visible);
+        });
+        tabs.forEach(tab => tab.classList.toggle('active', tab.dataset.staffFilter === category));
+    }
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => filterStaff(tab.dataset.staffFilter));
+    });
+
+    filterStaff('administration');
+})();
