@@ -1,21 +1,33 @@
-ES MURAMA SCHOOL WEBSITE
-========================
+ES MURAMA - HOSTING READY PACKAGE
 
-Files included:
-- index.html: main website
-- css/style.css: design
-- js/script.js: interactions and slideshow
-- images/: school, gallery and staff PNG images
-- robots.txt: permits search-engine crawling and points to sitemap
-- sitemap.xml: helps search engines discover the site
-- site.webmanifest: web-app metadata
+Main URL used in SEO files:
+https://ecolesecondairedemurama.netlify.app/
 
-SEO NOTE
---------
-This package is prepared for search-engine indexing, but no website can guarantee first place in Google/Bing results.
-After publishing on the final domain:
-1. Verify the domain in Google Search Console.
-2. Submit /sitemap.xml.
-3. Verify the site in Bing Webmaster Tools and submit the sitemap.
-4. Replace https://esmurama.netlify.app/ in canonical, Open Graph, robots.txt and sitemap.xml if you move to another domain.
-5. Keep the site mobile-friendly and update school content regularly.
+Included:
+- index.html (main website)
+- 404.html (custom not-found page)
+- netlify.toml (Netlify publish/headers configuration)
+- robots.txt (crawler rules and sitemap location)
+- sitemap.xml (homepage sitemap)
+- site.webmanifest (browser/app metadata)
+- favicon.png
+- css/style.css
+- js/script.js
+- images/ (school and staff PNG/JPG assets)
+
+STAFF DIRECTORY
+Administration, Teaching Staff and Supporting Staff are included.
+Each staff card shows name, role/subject and phone number. No View Profile button is used.
+Replace the placeholder PNG staff images and sample phone numbers in index.html with the real staff information.
+
+SEO
+- Title, description, keywords, canonical URL, Open Graph and Twitter metadata are included.
+- School structured data (Schema.org JSON-LD) is included.
+- robots.txt and sitemap.xml are included.
+- No code can guarantee a first-place Google result. Submit the sitemap through Google Search Console and Bing Webmaster Tools after publishing.
+
+NETLIFY
+Upload/deploy the contents of this ES-Murama folder so index.html is in the published root. netlify.toml sets the publish directory to the project root.
+
+CUSTOM DOMAIN
+If you later connect a custom domain, replace the canonical/OG URLs, robots.txt sitemap URL, sitemap.xml URL, and JSON-LD url with your final domain.

@@ -1,15 +1,12 @@
 {
-  "name": "Murama Secondary School",
-  "short_name": "Murama School",
+  "name": "Ecole Secondaire de Murama",
+  "short_name": "ES Murama",
+  "description": "Ecole Secondaire de Murama (ES Murama), Rwanda.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#1234d4",
   "icons": [
-    {
-      "src": "/images/logo.png",
-      "sizes": "any",
-      "type": "image/png"
-    }
+    {"src":"images/logo.png","sizes":"any","type":"image/png","purpose":"any maskable"}
   ]
 }

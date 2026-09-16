@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /404.html
 
-Sitemap: https://esmurama.netlify.app/sitemap.xml
+Sitemap: https://ecolesecondairedemurama.netlify.app/sitemap.xml
