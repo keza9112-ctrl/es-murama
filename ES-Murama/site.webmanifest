@@ -1,0 +1,15 @@
+{
+  "name": "Murama Secondary School",
+  "short_name": "Murama School",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1234d4",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}

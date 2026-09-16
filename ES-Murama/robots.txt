@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://esmurama.netlify.app/sitemap.xml
