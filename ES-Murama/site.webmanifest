@@ -1,12 +1,23 @@
+
 {
   "name": "Ecole Secondaire de Murama",
   "short_name": "ES Murama",
-  "description": "Ecole Secondaire de Murama (ES Murama), Rwanda.",
+  "description": "Official website of Ecole Secondaire de Murama (ES Murama), a secondary school in Rwanda.",
+  "id": "/",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "lang": "en",
+  "dir": "ltr",
   "background_color": "#ffffff",
   "theme_color": "#1234d4",
   "icons": [
-    {"src":"images/logo.png","sizes":"any","type":"image/png","purpose":"any maskable"}
+    {
+      "src": "images/logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
   ]
 }
+

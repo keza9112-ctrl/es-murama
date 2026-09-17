@@ -647,43 +647,6 @@ if (scrollTopButton) {
 
 
 /* =====================================================
-   CONTACT FORM
-===================================================== */
-
-const contactForm =
-    document.getElementById("contactForm");
-
-const formMessage =
-    document.getElementById("form-message");
-
-if (contactForm) {
-
-    contactForm.addEventListener(
-        "submit",
-        function (event) {
-
-            event.preventDefault();
-
-            if (formMessage) {
-
-                formMessage.textContent =
-                    "Thank you! Your message has been received.";
-
-                formMessage.classList.add(
-                    "form-success"
-                );
-
-            }
-
-            contactForm.reset();
-
-        }
-    );
-
-}
-
-
-/* =====================================================
    CLOSE MOBILE MENU WHEN CLICKING OUTSIDE
 ===================================================== */
 

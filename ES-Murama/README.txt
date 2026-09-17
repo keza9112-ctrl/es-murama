@@ -1,33 +1,77 @@
-ES MURAMA - HOSTING READY PACKAGE
+# Ecole Secondaire de Murama
 
-Main URL used in SEO files:
-https://ecolesecondairedemurama.netlify.app/
+Official website of **Ecole Secondaire de Murama (ES Murama)** in Rwanda.
 
-Included:
-- index.html (main website)
-- 404.html (custom not-found page)
-- netlify.toml (Netlify publish/headers configuration)
-- robots.txt (crawler rules and sitemap location)
-- sitemap.xml (homepage sitemap)
-- site.webmanifest (browser/app metadata)
-- favicon.png
-- css/style.css
-- js/script.js
-- images/ (school and staff PNG/JPG assets)
+## About the School
 
-STAFF DIRECTORY
-Administration, Teaching Staff and Supporting Staff are included.
-Each staff card shows name, role/subject and phone number. No View Profile button is used.
-Replace the placeholder PNG staff images and sample phone numbers in index.html with the real staff information.
+Ecole Secondaire de Murama is a secondary school in Rwanda. This website provides information about the school, academics, admissions, teachers, school life, and contact information.
 
-SEO
-- Title, description, keywords, canonical URL, Open Graph and Twitter metadata are included.
-- School structured data (Schema.org JSON-LD) is included.
-- robots.txt and sitemap.xml are included.
-- No code can guarantee a first-place Google result. Submit the sitemap through Google Search Console and Bing Webmaster Tools after publishing.
+## Website
 
-NETLIFY
-Upload/deploy the contents of this ES-Murama folder so index.html is in the published root. netlify.toml sets the publish directory to the project root.
+The official website is hosted on Netlify.
 
-CUSTOM DOMAIN
-If you later connect a custom domain, replace the canonical/OG URLs, robots.txt sitemap URL, sitemap.xml URL, and JSON-LD url with your final domain.
+## Main Features
+
+* School information
+* Academic information
+* Admissions information
+* Teachers and staff
+* School life
+* Contact information
+* Responsive design for computers and mobile devices
+* Search-engine-friendly structure
+* Web manifest and sitemap support
+
+## Website Files
+
+```text
+/
+├── index.html
+├── 404.html
+├── robots.txt
+├── sitemap.xml
+├── site.webmanifest
+├── netlify.toml
+├── README.md
+├── css/
+│   └── style.css
+├── js/
+│   └── ...
+└── images/
+    └── ...
+```
+
+## Deployment
+
+The website is deployed using Netlify.
+
+After making changes to the website files, deploy the updated project to Netlify and verify that the homepage loads correctly.
+
+## SEO and Indexing
+
+The website includes:
+
+* `robots.txt` for search-engine crawling instructions
+* `sitemap.xml` to help search engines discover website pages
+* Canonical URL information
+* Open Graph metadata
+* Web manifest
+* Search-engine indexing directives
+
+Search engines such as Google and Bing may crawl and index the website after it has been discovered and passes their quality and indexing requirements.
+
+## Maintenance
+
+Keep the following information up to date:
+
+* School information
+* Contact details
+* Academic information
+* Staff information
+* News and announcements
+* Images
+* Sitemap URLs
+
+---
+
+**Ecole Secondaire de Murama — Rwanda**

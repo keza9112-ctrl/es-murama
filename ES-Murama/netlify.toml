@@ -1,19 +1,34 @@
+```toml
 [build]
   publish = "."
 
+# Redirect /home to the main homepage
 [[redirects]]
   from = "/home"
   to = "/"
   status = 301
 
-[[redirects]]
-  from = "/*"
-  to = "/404.html"
-  status = 404
-
+# Security headers
 [[headers]]
   for = "/*"
   [headers.values]
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Frame-Options = "SAMEORIGIN"
+
+# Cache static assets
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+```
